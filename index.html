@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas do Joca</title>
+    <style>
+        body {
+            font-family: fantasy;
+            margin: 0;
+            padding: 0;
+            background-color: #f0cee5;
+        }
+        header {
+            background-color: #d89ad0;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+        nav {
+            background-color: #e294a7;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #ffabc0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .item {
+            background-color: #d89ad0;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .item img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover; /*ajusta a imagem no container*/
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .item:hover {
+            background-color: #ffabc0;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        .item:nth-child(3) {
+            background-color: #e294a7;
+        }
+        .item:nth-child(3):hover {
+            background-color: #e0a8b6;
+        }
+        .item::before {
+            content: "🍽️ ";
+            font-size: 24px;
+            color: #ff7bd3;     
+        }
+        .item::after {
+            content: " 🍰";
+            font-size: 24px;
+            color: #ff7bd3;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #d89ad0;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Receitas do Joca</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a>Início</a></li>
+            <li><a>Receitas</a></li>
+            <li><a>Dicas</a></li>
+            <li><a>Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="item">
+            <img src="assets/Pqueijo.jpg" alt="Pão de Queijo">
+            Pão de Queijo
+        </div>
+        <div class="item">
+            <img src="assets/Rocambole.jpg" alt="Rocambole">
+            Rocambole
+        </div>
+        <div class="item">
+            <img src="assets/pudim.jpg" alt="Pudim de Leite">
+            Pudim de Leite
+        </div>
+        <div class="item">
+            <img src="assets/bombom.jpg" alt="Bombom">
+            Bombom
+        </div>
+        <div class="item">
+            <img src="assets/bolo.jpg" alt="Bolo de Cenoura">
+            Bolo de Cenoura
+        </div>
+        <div class="item">
+            <img src="assets/cuca.jpg" alt="Cuca">
+            Cuca
+        </div>
+        <div class="item">
+            <img src="assets/pão.jpg" alt="Pão Francês">
+            Pão Francês
+        </div>
+        <div class="item">
+            <img src="assets/coxinha.jpg" alt="Coxinha">
+            Coxinha
+        </div>
+        <div class="item">
+            <img src="assets/pastel.jpg" alt="Pastel">
+            Pastel
+        </div>
+        <div class="item">
+            <img src="assets/bauru.jpg" alt="Bauru">
+            Bauru
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Receitas do Joca. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
